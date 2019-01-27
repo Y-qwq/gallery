@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body onselectstart="return false;">
+    <div class="wrap" id="wrap">
+      <div
+        class="photo photo_front"
+        onclick="turn(this)"
+        id="photo_{{ index }}"
+      >
+        <div class="photo-wrap">
+          <div class="side side-front">
+            <p class="image"><img src="photo/{{ img }}" /></p>
+            <p class="caption">{{ caption }}</p>
+          </div>
+          <div class="side side-back">
+            <p class="desc">{{ desc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/data.js"></script>
+  <script src="./js/effect.js"></script>
+</html>
